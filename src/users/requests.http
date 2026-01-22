@@ -1,0 +1,25 @@
+POST http://localhost:3000/auth/signup
+Content-Type: application/json
+
+{
+    "email":"Ds@test.com",
+    "password": "Bsalman0112365!"
+}
+
+### Find a particular user with a given ID
+GET http://localhost:3000/auth/2
+
+### find All users that have one Email
+
+GET http://localhost:3000/auth?email=Ds@test.com
+
+### update user 
+PATCH http://localhost:3000/auth/2
+Content-Type: application/json
+
+
+{
+    "password": "update0112365!"
+}
+### Delete a particular user with a given ID 
+DELETE http://localhost:3000/auth/3
